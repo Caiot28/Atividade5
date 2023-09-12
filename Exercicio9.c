@@ -10,6 +10,7 @@ main(){
 
     printf("Digite seu tempo de servico em anos: ");
     scanf("%f", &tempoServico);
+    
 
     if (salarioAtual <= 500) {
 
@@ -31,6 +32,7 @@ main(){
 
         salarioNovo = salarioAtual;
     }
+    
 
     if (tempoServico >= 1 && tempoServico <= 3) {
 
@@ -47,20 +49,19 @@ main(){
     } else if (tempoServico > 10) {
 
         bonus = 500;
-
     } 
 
     salarioNovo = salarioNovo + bonus;
 
+    
     if (salarioNovo == salarioAtual) {
 
     printf("Nao tem direito a reajuste");
 
     } else {
 
-        printf("Seu novo salario e: %.2f", salarioNovo);
+    printf("Seu novo salario e: %.2f", salarioNovo);
     }
-
 
 }
     
